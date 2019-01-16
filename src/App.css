@@ -1,32 +1,274 @@
 .App {
   text-align: center;
+  display:flex;
+  flex-direction:column;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.header{
+  height:125px;
+  width:100%;
+  background-image: linear-gradient(rgb(119, 194, 93), rgb(14, 102, 14));
+  position:fixed;
+  top:0;
+  display:flex;
+  box-sizing:border-box;
+  border-bottom:3px solid black;
+  box-shadow: 3px 5px 20px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo-section{
+  height:125px;
+  width:20%;
 }
 
-.App-link {
-  color: #61dafb;
+.title-section{
+  height:125px;
+  width: 60%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.links-section{
+  height:125px;
+  width:20%;
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-end;
+}
+
+.option-div{
+  box-sizing:border-box;
+  height:125px;
+  width:110px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  display:none;
+}
+
+.space{
+  height:125px;
+  width:100%;
+}
+
+.k{
+  height:200px;
+  width:100px;
+  background-color:yellow;
+}
+
+.my-name{
+  font-size:30px;
+  margin-top:15px;
+}
+
+.my-profession{
+  font-size:20px;
+  margin-top:-20px;
+}
+
+.white-line{
+  height:4px;
+  width:40px;
+  background-color:white;
+}
+
+.my-square{
+  height:40px;
+  width:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.drop-down-menu{
+  position:absolute;
+  background-color:pink;
+  width:100%;
+  top:125px;
+  height:100vh;
+  background-image: linear-gradient(rgb(75, 145, 40), rgb(14, 102, 14));
+}
+
+.drop-down-option{
+  border-bottom:3px solid black;
+  height:50px;
+  width:100%;
+  background-image: linear-gradient(rgb(93, 140, 194), rgb(72, 111, 129));
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.centerpiece{
+  height:50px;
+  width:170px;
+  display:flex;
+}
+
+.label{
+  position:relative;
+  bottom:32px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#selected{
+  background-image:linear-gradient(white, rgb(150, 150, 150));
+}
+
+.head-option{
+  border-left:2px solid black;
+}
+
+
+
+
+@media only screen and (min-width:517px){
+  body{
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (min-width:556px){
+  body{
+    
+  }
+  .my-name{
+    font-size:35px;
+    margin-top:15px;
+    position:relative;
+    bottom:10px;
+  }
+
+  .my-profession{
+    position:relative;
+    bottom:12px;
+  }
+}
+
+@media only screen and (min-width: 650px){
+  body {
+  }
+  .my-name{
+    font-size:40px;
+    position:relative;
+    bottom:15px;
+  }
+
+  .my-profession{
+    position:relative;
+    bottom:23px;
+  }
+}
+
+@media only screen and (min-width: 742px){
+  body {
+  }
+
+  .my-name{
+    font-size:45px;
+    position:relative;
+    bottom:10px;
+    line-height:45px;
+  }
+
+  .my-profession{
+    position:relative;
+    bottom:22px;
+  }
+}
+
+@media only screen and (min-width: 835px){
+  body{
+  }
+  .my-name{
+    font-size:50px;
+    position:relative;
+    bottom:10px;
+    line-height:45px;
+  }
+
+  .my-profession{
+    position:relative;
+    bottom:22px;
+  }
+}
+
+@media only screen and (min-width: 927px){
+  body{
+  }
+  .my-name{
+    font-size:50px;
+    position:relative;
+    top:10px;
+    line-height:45px;
+  }
+
+  .my-profession{
+    position:relative;
+    top:5px;
+    font-size:30px;
+  }
+}
+
+@media only screen and (min-width: 1431px){
+  .option-div{
+    display:flex;
+    box-sizing:border-box;
+  }
+  button{
+    display:none;
+  }
+
+  .drop-down-menu{
+    display:none;
+  }
+
+  .logo-section{
+    width:33%;
+  }
+
+  .title-section{
+    width:34%;
+  }
+
+  .links-section{
+    width:33%;
+  }
+
+  .my-name{
+    font-size:45px;
+    position:relative;
+    top:-14px;
+    line-height:45px;
+  }
+
+  .my-profession{
+    position:relative;
+    top:-24px;
+    font-size:25px;
+  }
+}
+
+@media only screen and (min-width: 1472px){
+  body{
+  }
+
+  .my-name{
+    font-size:50px;
+    top:-12px;
+  }
+
+  .my-profession{
+    top:-26px;
+  }
+}
+
+@media only screen and (min-width: 1636px){
+  body{
+  }
+  .my-name{
+    top:10px;
+  }
+
+  .my-profession{
+    top:-0px;
   }
 }

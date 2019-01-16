@@ -12,3 +12,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1,h2{
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+a{
+  font-size:30px;
+  text-decoration:none;
+  color:black;
+  font-family:Geneva;
+  box-sizing:border-box;
+  border-top:2px solid black;
+  border-bottom:3px solid black;
+  background-image: linear-gradient(rgb(93, 100, 109), rgb(73, 81, 85));
+}
+
+button{
+  width:80px;
+  height:122px;
+  background-color:black;
+  border: 2px solid white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
+}
+
