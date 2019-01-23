@@ -20,8 +20,11 @@ class Home extends Component{
 
     render(){
         return (
-            <div className='k'>
-                Home
+            <div>
+                <div className='home-stuff'>
+                    <img className='profile-pic' src='https://media.licdn.com/dms/image/C5603AQFBeKst4cNITA/profile-displayphoto-shrink_200_200/0?e=1553731200&v=beta&t=b_lg3HEMXKr01txWeC77gYW-l5PLivtIVf3pgVuzFqY' alt/>
+                    <div className='under-profile-description-div'>Showing the talents and accomplishments of Aaron Braithwaite as a web developer</div>
+                </div>
             </div>
         )
     }

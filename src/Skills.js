@@ -19,8 +19,36 @@ class Skills extends Component{
 
     render(){
         return (
-            <div className='k'>
-                Skills
+            <div className='brav'>
+                <div className='my-contact-piece'>
+                    <div className='holder-of-page-title-div'><h1 className='page-title'>Skills</h1></div>
+                    <div className='holder-of-very-particular-set-of-skills'>
+                        <div className='skill-div'>
+                            <div><img src='https://www.gfxmag.com/wp-content/uploads/2016/07/nodejs-icon-vector-logo-1.png' className='skill'/></div>
+                            <div className='title-of-skill-div'>Javascript</div>
+                        </div>
+                        <div className='skill-div'>
+                        <div><img src='https://img.icons8.com/color/1600/nodejs.png' className='skill'/></div>
+                            <div className='title-of-skill-div'>Nodejs</div>
+                        </div>
+                        <div className='skill-div'>
+                        <div><img src='http://cdn.onlinewebfonts.com/svg/img_52059.png' className='skill'/></div>
+                            <div className='title-of-skill-div'>CSS</div>
+                        </div>
+                        <div className='skill-div'>
+                        <div><img src='https://cdn-images-1.medium.com/max/1600/1*WcRnU2ERqYHZBKBQ0zXCvg.png' className='skill'/></div>
+                            <div className='title-of-skill-div'>Redux</div>
+                        </div>
+                        <div className='skill-div'>
+                        <div><img src='http://www.stickpng.com/assets/images/58482deccef1014c0b5e4a64.png' className='skill'/></div>
+                            <div className='title-of-skill-div'>Socket.io</div>
+                        </div>
+                        <div className='skill-div'>
+                        <div><img src='http://www.stickpng.com/assets/images/584815fdcef1014c0b5e497a.png' className='skill'/></div>
+                            <div className='title-of-skill-div'>PostgreSQL</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

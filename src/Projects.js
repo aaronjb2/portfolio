@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
+import './App.css'
+import execution from './images/execution.PNG';
+import identity from './images/identity.PNG';
+import MerlinGuess from './images/MerlinGuess.PNG';
+import ProposeQuest from './images/ProposeQuest.PNG';
 
 class Projects extends Component{
     constructor(props){
         super(props);
 
         this.state = {
-
+            first_project:'normal',
+            first_project_stage:0
         }
     }
 
@@ -19,8 +25,77 @@ class Projects extends Component{
 
     render(){
         return (
-            <div className='k'>
-                Projects
+            <div>
+                <div>
+                    <h1>Projects</h1>
+                </div>
+                <div className='container-of-projects'>
+                    <div className='holder-of-header-and-subheader'>
+                        <h2>Sabotage The Quest</h2>
+                        <h3>Personal Project</h3>
+                    </div>
+                    <div className='holder-of-domain-and-githubs'>
+                        <div className='alpha'><h3>domain:</h3></div>
+                        <div className='bravo'><h3>sabotagethequest.com</h3></div>
+                        <div className='charlie'><h3>github:</h3></div>
+                        <div className='delta'><h3>github.com/aaronjb2/personalproject</h3></div>
+                    </div>
+                    <div className='el-espacio'>
+
+                    </div>
+                    <div className='container-of-carousel'>
+                        <div className='container-of-go-through-pictures-button'>
+                            <button disabled={this.state.first_project!=='normal'} onClick={()=>{
+                                this.setState({first_project:'left'});
+                                setTimeout(()=>{
+                                    this.setState({first_project_stage:this.state.first_project_stage===3?0:this.state.first_project_stage+1,first_project:'normal'})
+                                    console.log('this.state.first_project_stage:',this.state.first_project_stage)
+                                },500);
+                            }}><div className='top-line-thingy-left-side'></div><div className='bottom-line-thingy-left-side'></div></button>
+                        </div>
+                        <div className='container-of-project-picture'>
+                            <div className={this.state.first_project==='normal'?'pictures-for-display-div1':this.state.first_project==='left'?'pictures-for-display-div2':'pictures-for-display-div3'}>
+                                <div className={this.state.first_project_stage===0?'proj-pic-div1':this.state.first_project_stage===1?'proj-pic-div2':this.state.first_project_stage===2?'proj-pic-div3':'proj-pic-div4'}>
+                                    <div className={this.state.first_project_stage===0?'carrier-of-propose-quest':this.state.first_project_stage===1?'carrier-of-identity':this.state.first_project_stage===2?'carrier-of-execution':'carrier-of-merlin-guess'}>
+                                        <img className='cool-picture' src={this.state.first_project_stage===0?ProposeQuest:this.state.first_project_stage===1?identity:this.state.first_project_stage===2?execution:MerlinGuess}/>
+                                    </div>
+                                </div>
+                                <div className='i-have-a-blank-space'>
+                                    
+                                </div>
+                                <div className={this.state.first_project_stage===0?'proj-pic-div2':this.state.first_project_stage===1?'proj-pic-div3':this.state.first_project_stage===2?'proj-pic-div4':'proj-pic-div1'}>
+                                    <div className={this.state.first_project_stage===3?'carrier-of-propose-quest':this.state.first_project_stage===0?'carrier-of-identity':this.state.first_project_stage===1?'carrier-of-execution':'carrier-of-merlin-guess'}>
+                                        <img className='cool-picture' src={this.state.first_project_stage===3?ProposeQuest:this.state.first_project_stage===0?identity:this.state.first_project_stage===1?execution:MerlinGuess}/>
+                                    </div>
+                                </div>
+                                <div className='i-have-a-blank-space'>
+
+                                </div>
+                                <div className={this.state.first_project_stage===0?'proj-pic-div3':this.state.first_project_stage===1?'proj-pic-div4':this.state.first_project_stage===2?'proj-pic-div1':'proj-pic-div2'}>
+                                    <div className={this.state.first_project_stage===2?'carrier-of-propose-quest':this.state.first_project_stage===3?'carrier-of-identity':this.state.first_project_stage===0?'carrier-of-execution':'carrier-of-merlin-guess'}>
+                                        <img className='cool-picture' src={this.state.first_project_stage===2?ProposeQuest:this.state.first_project_stage===3?identity:this.state.first_project_stage===0?execution:MerlinGuess}/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='container-of-go-through-pictures-button'>
+                            <button disabled={this.state.first_project!=='normal'} onClick={()=>{
+                                this.setState({first_project:'right'});
+                                setTimeout(()=>{
+                                    this.setState({first_project_stage:this.state.first_project_stage===0?3:this.state.first_project_stage-1,first_project:'normal'})
+                                    console.log('this.state.first_project_stage:',this.state.first_project_stage)
+                                },500);
+                            }}><div className='top-line-thingy-right-side'></div><div className='bottom-line-thingy-right-side'></div></button>
+                        </div>
+                    </div>
+                    <div className='el-space'>
+
+                    </div>
+                    <div className='container-for-paragraphs-describing-project'>
+                        <p>Sabotage The Quest is a web application that allows users to play Resistance Avalon through their phones with a host computer screen to display all the results of the game as they play.</p>
+                        <p>Important technologies used to make this app include PostgreSQL and Socket.io.</p>
+                    </div>
+                </div>
             </div>
         )
     }
