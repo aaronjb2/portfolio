@@ -2,7 +2,10 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "main":"server/server",
+  "proxy":"http://localhost:3652",
   "dependencies": {
+    "express": "^4.16.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
