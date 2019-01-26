@@ -19,7 +19,7 @@ class Skills extends Component{
 
     render(){
         return (
-            <div className='brav'>
+            <div className='skills'>
                 <div className='my-contact-piece'>
                     <div className='holder-of-page-title-div'><h1 className='page-title'>Skills</h1></div>
                     <div className='holder-of-very-particular-set-of-skills'>
@@ -46,6 +46,10 @@ class Skills extends Component{
                         <div className='skill-div'>
                         <div><img src='http://www.stickpng.com/assets/images/584815fdcef1014c0b5e497a.png' className='skill'/></div>
                             <div className='title-of-skill-div'>PostgreSQL</div>
+                        </div>
+                        <div className='skill-div'>
+                        <div><img src='https://png.pngtree.com/svg/20170719/react_1353128.png' className='skill'/></div>
+                            <div className='title-of-skill-div'>React</div>
                         </div>
                     </div>
                 </div>

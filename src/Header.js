@@ -21,7 +21,7 @@ class Header extends Component{
                 <h2 className='my-profession'>Web Developer</h2>
                 </div>
                 <div className='links-section'>
-                    <button onClick={()=>this.props.toggleDropDownMenu()}>
+                    <button id ='menu-button' onClick={()=>this.props.toggleDropDownMenu()}>
                         <div className='my-square'>
                             <div className='white-line'></div>
                             <div className='white-line'></div>

@@ -16,7 +16,7 @@
   box-sizing:border-box;
   border-bottom:3px solid black;
   box-shadow: 3px 5px 20px black;
-  z-index: 1;
+  z-index: 3;
 }
 
 .logo-section{
@@ -88,9 +88,11 @@
   width:100%;
   top:125px;
   height:100vh;
-  background-image: linear-gradient(rgb(75, 145, 40), rgb(14, 102, 14));
+  background-image: linear-gradient(rgb(200, 200, 200), rgb(100, 100, 100));
   z-index:2;
 }
+
+
 
 .drop-down-option{
   border-bottom:3px solid black;
@@ -137,7 +139,7 @@
 
 .contact-piece{
   height:80px;
-  width:316px;
+  
   display:flex;
   flex-direction:column;
   align-items:flex-start;
@@ -176,9 +178,9 @@ width:92%
   
   display:flex;
   flex-direction:column;
-  justify-content:center;
+  justify-content:flex-start;
   align-items:center;
-  
+  height:100vh;
 }
 
 .my-story{
@@ -241,7 +243,7 @@ width:92%
   font-size:20px;
   font-weight:bold;
   width:260px;
-  text-align:left;
+  
 }
 
 .home-stuff{
@@ -314,6 +316,7 @@ width:92%
   align-items:center;
   position:relative;
   bottom:23px;
+  text-align:center;
   
 }
 
@@ -321,6 +324,7 @@ width:92%
   font-weight:900;
   width:300px;
   word-wrap:break-word;
+  text-align:center;
 }
 
 .container-of-carousel{
@@ -427,7 +431,7 @@ width:92%
   width:220px;
 }
 
-.proj-pic-div1{
+.proj-pic-div{
   height:280px;
   width:220px;
   display:flex;
@@ -436,32 +440,7 @@ width:92%
   justify-content:center;
 }
 
-.proj-pic-div2{
-  height:280px;
-  width:220px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-}
 
-.proj-pic-div3{
-  height:280px;
-  width:220px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-}
-
-.proj-pic-div4{
-  height:280px;
-  width:220px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-}
 
 .carrier-of-propose-quest{
   border:3px solid black;
@@ -495,6 +474,47 @@ width:92%
   justify-content:center;
 }
 
+.carrier-of-about{
+  border:3px solid black;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:102px;
+  width:219px;
+}
+
+.carrier-of-edit{
+  border:3px solid black;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:102px;
+  width:219px;
+}
+
+.carrier-of-pieces{
+  border:3px solid black;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:222px;
+  height:112px;
+}
+
+.carrier-of-board{
+  border:3px solid black;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  position:right;
+  height:102px;
+  width:219px;
+}
+
 .el-space{
   width:5px;
   height:0px;
@@ -515,14 +535,191 @@ text-align:left;
 font-weight:bold;
 }
 
+.container-of-projects{
+  position:relative;
+  bottom:30px;
+}
+
+@media only screen and (min-width:400px){
+  .page-title{
+    font-size:45px;
+  }
+  .drop-down-menu{
+    width:400px;
+    border-left:3px solid black;
+    right:0;
+  }
+
+  .drop-down-option{
+    
+  }
+  .profile-pic{
+    height:320px;
+  }
+  .under-profile-description-div{
+    font-size:30px;
+  }
+  .my-story{
+    font-size:22px;
+  }
+  .holder-of-header-and-subheader h2{
+    font-size:25px;
+  }
+  .holder-of-header-and-subheader h3{
+    font-size:22px;
+  }
+  .alpha,bravo,charlie,delta h3{
+    font-size:20px;
+  }
+  .bravo h3{
+    font-size:20px;
+  }
+  .charlie h3{
+    font-size:20px;
+  }
+  .delta h3{
+    font-size:20px;
+  }
+  .container-of-projects{
+    position:relative;
+    bottom:40px;
+  }
+
+  .contact-piece h4{
+    font-size:17px;
+  }
+}
+
+
 @media only screen and (min-width:517px){
   body{
   }
+  .contact-piece h4{
+    font-size:22px;
+  }
+  .profile-pic{
+    height:340px;
+  }
+  .home-stuff{
+    position:relative;
+    top:65px;
+  }
+  .under-profile-description-div{
+    font-size:30px;
+  }
+  .my-story{
+    font-size:27px;
+  }
+  .important-contact-info{
+    position:relative;
+    bottom:60px;
+  }
+  .page-title{
+    font-size:47px;
+  }
+  .holder-of-header-and-subheader h2{
+    font-size:26px;
+  }
+  .container-of-projects{
+    position:relative;
+    bottom:50px;
+  }
+  .holder-of-header-and-subheader h3{
+    font-size:23px;
+  }
+  .alpha h3{
+    font-size:21px;
+  }
+  .bravo h3{
+    font-size:21px;
+  }
+  .charlie h3{
+    font-size:21px;
+  }
+  .delta h3{
+    font-size:21px;
+    width:394px;
+  }
+
+  #time-to-stretch{
+   width:394px; 
+  }
+  .container-of-project-picture{
+    width:334px;
+  }
+  .proj-pic-div{
+    width:320px;
+  }
+  .i-have-a-blank-space{
+    width:320px;
+  }
+  .pictures-for-display-div1{
+    width:1600px;
+  }
+  .pictures-for-display-div2{
+    width:1600px;
+    transform: translate(-640px,0px);
+  }
+  .pictures-for-display-div3{
+    width:1600px;
+    transform: translate(640px,0px);
+  }
+  .carrier-of-about{
+    width:320px;
+    height:150px;
+  }
+  .carrier-of-board{
+    width:320px;
+    height:150px;
+  }
+  .carrier-of-edit{
+    width:320px;
+    height:150px;
+  }
+  .carrier-of-pieces{
+    width:320px;
+    height:150px;
+  }
+  .carrier-of-identity{
+    height:280px;
+    width:220px;
+  }
+  .turkey{
+    width:394px;
+  }
+  .carrier-of-merlin-guess{
+
+  }
+  .carrier-of-propose-quest{
+
+  }
+  .carrier-of-execution{
+
+  }
+  .container-for-paragraphs-describing-project{
+    width:394px;
+  }
+  .container-for-paragraphs-describing-project p{
+    font-size:20px;
+  }
+
+  .tiny-bit-of-space-very-small{
+    width:5px;
+    height:4px;
+  }
+
+  
 }
 
 @media only screen and (min-width:556px){
   body{
     
+  }
+  .contact-piece h4{
+    font-size:22px;
+  }
+  .profile-pic{
+    height:360px;
   }
   .my-name{
     font-size:35px;
@@ -530,15 +727,33 @@ font-weight:bold;
     position:relative;
     bottom:10px;
   }
-
+  .my-story{
+    font-size:29px;
+  }
   .my-profession{
     position:relative;
     bottom:12px;
+  }
+  .contact-piece h4{
+    font-size:23px;
+  }
+  .important-contact-info{
+    position:relative;
+    bottom:63px;
   }
 }
 
 @media only screen and (min-width: 650px){
   body {
+  }
+  .my-story{
+    font-size:31px;
+  }
+  .contact-piece h4{
+    font-size:22px;
+  }
+  .profile-pic{
+    height:380px;
   }
   .my-name{
     font-size:40px;
@@ -546,18 +761,128 @@ font-weight:bold;
     bottom:15px;
   }
 
+  .skills{
+    height:100vh;
+  }
+
+  .contact-piece h4{
+    font-size:29px;
+  }
+  .important-contact-info{
+    position:relative;
+    bottom:83px;
+  }
+
   .my-profession{
     position:relative;
     bottom:23px;
   }
 
+
   .holder-of-very-particular-set-of-skills{
     width:700px;
   }
+
+  .page-title{
+    font-size:50px;
+  }
+  .holder-of-header-and-subheader h2{
+    font-size:28px;
+  }
+  .holder-of-header-and-subheader h3{
+    font-size:25px;
+  }
+  .alpha h3{
+    font-size:23px;
+  }
+  .bravo h3{
+    font-size:23px;
+  }
+  .charlie h3{
+    font-size:23px;
+  }
+  .delta h3{
+    font-size:23px;
+    width:594px;
+  }
+
+  #time-to-stretch{
+   width:564px; 
+  }
+  .container-of-project-picture{
+    width:504px;
+  }
+  .proj-pic-div{
+    width:490px;
+  }
+  .i-have-a-blank-space{
+    width:490px;
+  }
+  .pictures-for-display-div1{
+    width:2450px;
+  }
+  .pictures-for-display-div2{
+    width:2450px;
+    transform: translate(-980px,0px);
+  }
+  .pictures-for-display-div3{
+    width:2450px;
+    transform: translate(980px,0px);
+  }
+  .carrier-of-about{
+    width:481px;
+    height:232px;
+  }
+  .carrier-of-board{
+    width:481px;
+    height:232px;
+  }
+  .carrier-of-edit{
+    width:481px;
+    height:232px;
+  }
+  .carrier-of-pieces{
+    width:481px;
+    height:232px;
+  }
+  .carrier-of-identity{
+    height:280px;
+    width:220px;
+  }
+  .turkey{
+    width:394px;
+  }
+  .carrier-of-merlin-guess{
+
+  }
+  .carrier-of-propose-quest{
+
+  }
+  .carrier-of-execution{
+
+  }
+  .container-for-paragraphs-describing-project{
+    width:394px;
+  }
+  .container-for-paragraphs-describing-project p{
+    font-size:22px;
+  }
+
+  .tiny-bit-of-space-very-small{
+    width:5px;
+    height:4px;
+  }
+.bbbnnn{
+  width:5px;
+  height:9px;
+}
 }
 
 @media only screen and (min-width: 742px){
   body {
+  }
+  .my-story{
+    font-size:35px;
   }
 
   .my-name{
@@ -571,6 +896,19 @@ font-weight:bold;
     position:relative;
     bottom:22px;
   }
+
+  .contact-piece h4{
+    font-size:32px;
+  }
+  .important-contact-info{
+    position:relative;
+    bottom:83px;
+  }
+
+  .space-traveller{
+    width:5px;
+    height:40px;
+  }
 }
 
 
@@ -578,6 +916,24 @@ font-weight:bold;
 @media only screen and (min-width: 835px){
   body{
   }
+  .my-story{
+    font-size:37px;
+  }
+  
+  .contact-piece h4{
+    font-size:39px;
+  }
+  .important-contact-info{
+    position:relative;
+    bottom:109px;
+  }
+
+
+  .space-traveller{
+    width:5px;
+    height:45px;
+  }
+
   .my-name{
     font-size:50px;
     position:relative;
@@ -585,26 +941,203 @@ font-weight:bold;
     line-height:45px;
   }
 
+
   .my-profession{
     position:relative;
     bottom:22px;
   }
+
+  .page-title{
+    font-size:55px;
+  }
+  .holder-of-header-and-subheader h2{
+    font-size:31px;
+  }
+  .holder-of-header-and-subheader h3{
+    font-size:27px;
+  }
+  .alpha h3{
+    font-size:25px;
+  }
+  .bravo h3{
+    font-size:25px;
+  }
+  .charlie h3{
+    font-size:25px;
+  }
+  .delta h3{
+    font-size:25px;
+    width:794px;
+  }
+
+  .container-of-carousel{
+    height:400px;
+  }
+
+  #time-to-stretch{
+   width:764px; 
+  }
+  .container-of-project-picture{
+    width:704px;
+    justify-content:center;
+  }
+
+  .container-of-go-through-pictures-button{
+    height:400px;
+  }
+
+  .container-of-project-picture{
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .proj-pic-div{
+    width:680px;
+    height:380px;
+  }
+  .i-have-a-blank-space{
+    width:680px;
+    height:380px;
+  }
+  .pictures-for-display-div1{
+    width:3400px;
+    height:380px;
+  }
+  .pictures-for-display-div2{
+    width:3400px;
+    height:380px;
+    transform: translate(-1360px,0px);
+  }
+  .pictures-for-display-div3{
+    width:3400px;
+    height:380px;
+    transform: translate(1360px,0px);
+  }
+  .carrier-of-about{
+    width:676px;
+    height:302px;
+  }
+  .carrier-of-board{
+    width:676px;
+    height:302px;
+  }
+  .carrier-of-edit{
+    width:676px;
+    height:302px;
+  }
+  .carrier-of-pieces{
+    width:676px;
+    height:302px;
+  }
+  .carrier-of-identity{
+    height:380px;
+    width:320px;
+  }
+  .turkey{
+    width:394px;
+  }
+  .carrier-of-merlin-guess{
+
+  }
+  .carrier-of-propose-quest{
+
+  }
+  .carrier-of-execution{
+    height:372px;
+    width:668px;
+  }
+  .container-for-paragraphs-describing-project{
+    width:394px;
+  }
+  .container-for-paragraphs-describing-project p{
+    font-size:22px;
+  }
+
+  .tiny-bit-of-space-very-small{
+    width:5px;
+    height:4px;
+  }
+.bbbnnn{
+  width:5px;
+  height:17px;
+}
 }
 
 @media only screen and (min-width: 927px){
   body{
   }
+  
   .my-name{
     font-size:50px;
     position:relative;
-    top:10px;
+    top:-16px;
     line-height:45px;
+  }
+  .my-story{
+    font-size:39px;
+  }
+  .contact-piece h4{
+    font-size:42px;
+  }
+  .important-contact-info{
+    position:relative;
+    bottom:119px;
+  }
+
+  .space-traveller{
+    width:5px;
+    height:50px;
   }
 
   .my-profession{
     position:relative;
-    top:5px;
+    top:-33px;
     font-size:30px;
+  }
+  
+  .holder-of-very-particular-set-of-skills{
+    width:1000px;
+    position:relative;
+    top:40px;
+  }
+.title-section{
+  position:relative;
+  bottom:40px;
+}
+
+}
+
+@media only screen and (min-width: 948px){
+  .title-section{
+    position:relative;
+    top:25px;
+  }
+  
+}
+
+@media only screen and (min-width: 1200px){
+  .contact-piece h4{
+    font-size:48px;
+  }
+  
+  .my-story{
+    font-size:45px;
+  }
+  .title-section{
+    position:relative;
+    top:0px;
+  }
+  
+  .important-contact-info{
+    position:relative;
+    bottom:139px;
+  }
+
+  .space-traveller{
+    width:5px;
+    height:80px;
   }
 }
 
@@ -613,7 +1146,15 @@ font-weight:bold;
     display:flex;
     box-sizing:border-box;
   }
-  button{
+  .my-story{
+    font-size:50px;
+  }
+
+  .contact-piece h4{
+    font-size:50px;
+  }
+
+  #menu-button{
     display:none;
   }
 
@@ -665,9 +1206,17 @@ font-weight:bold;
   body{
   }
   .my-name{
+    top:-15px;
+  }
+  .my-profession{
+    top:-25px;
+  }
+}
+
+@media only screen and (min-width: 1657px){
+  .my-name{
     top:10px;
   }
-
   .my-profession{
     top:-0px;
   }
