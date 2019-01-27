@@ -57,7 +57,7 @@ class Projects extends Component{
                                 setTimeout(()=>{
                                     this.setState({first_project_stage:this.state.first_project_stage===3?0:this.state.first_project_stage+1,first_project:'normal'})
                                     console.log('this.state.first_project_stage:',this.state.first_project_stage)
-                                },500);
+                                },510);
                             }}><div className='top-line-thingy-left-side'></div><div className='bottom-line-thingy-left-side'></div></button>
                         </div>
                         <div className='container-of-project-picture'>
@@ -90,7 +90,7 @@ class Projects extends Component{
                                 this.setState({first_project:'right'});
                                 setTimeout(()=>{
                                     this.setState({first_project_stage:this.state.first_project_stage===0?3:this.state.first_project_stage-1,first_project:'normal'})
-                                },500);
+                                },510);
                             }}><div className='top-line-thingy-right-side'></div><div className='bottom-line-thingy-right-side'></div></button>
                         </div>
                     </div>
@@ -126,7 +126,7 @@ class Projects extends Component{
                                 this.setState({second_project:'left'});
                                 setTimeout(()=>{
                                     this.setState({second_project_stage:this.state.second_project_stage===3?0:this.state.second_project_stage+1,second_project:'normal'})
-                                },500);
+                                },510);
                             }}><div className='top-line-thingy-left-side'></div><div className='bottom-line-thingy-left-side'></div></button>
                         </div>
                         <div className='container-of-project-picture'>
@@ -159,7 +159,7 @@ class Projects extends Component{
                                 this.setState({second_project:'right'});
                                 setTimeout(()=>{
                                     this.setState({second_project_stage:this.state.second_project_stage===0?3:this.state.second_project_stage-1,second_project:'normal'})
-                                },500);
+                                },510);
                             }}><div className='top-line-thingy-right-side'></div><div className='bottom-line-thingy-right-side'></div></button>
                         </div>
                     </div>
