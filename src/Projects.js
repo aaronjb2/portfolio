@@ -54,10 +54,10 @@ class Projects extends Component{
                         <div className='container-of-go-through-pictures-button'>
                             <button disabled={this.state.first_project!=='normal'} onClick={()=>{
                                 this.setState({first_project:'left'});
-                                setTimeout(()=>{
-                                    this.setState({first_project_stage:this.state.first_project_stage===3?0:this.state.first_project_stage+1,first_project:'normal'})
-                                    console.log('this.state.first_project_stage:',this.state.first_project_stage)
-                                },700);
+                                setTimeout(async ()=>{
+                                    await this.setState({first_project_stage:this.state.first_project_stage===3?0:this.state.first_project_stage+1})
+                                    this.setState({first_project:'normal'})
+                                },500);
                             }}><div className='top-line-thingy-left-side'></div><div className='bottom-line-thingy-left-side'></div></button>
                         </div>
                         <div className='container-of-project-picture'>
@@ -88,9 +88,10 @@ class Projects extends Component{
                         <div className='container-of-go-through-pictures-button'>
                             <button disabled={this.state.first_project!=='normal'} onClick={()=>{
                                 this.setState({first_project:'right'});
-                                setTimeout(()=>{
-                                    this.setState({first_project_stage:this.state.first_project_stage===0?3:this.state.first_project_stage-1,first_project:'normal'})
-                                },700);
+                                setTimeout(async ()=>{
+                                    await this.setState({first_project_stage:this.state.first_project_stage===0?3:this.state.first_project_stage-1})
+                                    this.setState({first_project:'normal'});
+                                },500);
                             }}><div className='top-line-thingy-right-side'></div><div className='bottom-line-thingy-right-side'></div></button>
                         </div>
                     </div>
@@ -124,9 +125,10 @@ class Projects extends Component{
                         <div className='container-of-go-through-pictures-button'>
                             <button disabled={this.state.second_project!=='normal'} onClick={()=>{
                                 this.setState({second_project:'left'});
-                                setTimeout(()=>{
-                                    this.setState({second_project_stage:this.state.second_project_stage===3?0:this.state.second_project_stage+1,second_project:'normal'})
-                                },700);
+                                setTimeout(async ()=>{
+                                    await this.setState({second_project_stage:this.state.second_project_stage===3?0:this.state.second_project_stage+1})
+                                    this.setState({second_project:'normal'});
+                                },500);
                             }}><div className='top-line-thingy-left-side'></div><div className='bottom-line-thingy-left-side'></div></button>
                         </div>
                         <div className='container-of-project-picture'>
@@ -157,9 +159,10 @@ class Projects extends Component{
                         <div className='container-of-go-through-pictures-button'>
                             <button disabled={this.state.second_project!=='normal'} onClick={()=>{
                                 this.setState({second_project:'right'});
-                                setTimeout(()=>{
-                                    this.setState({second_project_stage:this.state.second_project_stage===0?3:this.state.second_project_stage-1,second_project:'normal'})
-                                },700);
+                                setTimeout(async ()=>{
+                                    await this.setState({second_project_stage:this.state.second_project_stage===0?3:this.state.second_project_stage-1})
+                                    this.setState({second_project:'normal'})
+                                },500);
                             }}><div className='top-line-thingy-right-side'></div><div className='bottom-line-thingy-right-side'></div></button>
                         </div>
                     </div>
