@@ -24,7 +24,7 @@ class Skills extends Component{
                     <div className='holder-of-page-title-div'><h1 className='page-title'>Skills</h1></div>
                     <div className='holder-of-very-particular-set-of-skills'>
                         <div className='skill-div'>
-                            <div><img src='https://www.gfxmag.com/wp-content/uploads/2016/07/nodejs-icon-vector-logo-1.png' className='skill'/></div>
+                            <div><img src='https://quiksite.com/wp-content/uploads/2016/09/Javascript.png?x14593' className='skill'/></div>
                             <div className='title-of-skill-div'>Javascript</div>
                         </div>
                         <div className='skill-div'>
