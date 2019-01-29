@@ -13,12 +13,8 @@ class Header extends Component{
     render(){
         return (
             <div className = 'header'>
-                <div className='logo-section'>
-                    
-                </div>
                 <div className='title-section'>
-                <h1 className='my-name'>Aaron J Braithwaite</h1>
-                <h2 className='my-profession'>Web Developer</h2>
+                    <h1 className='my-name'>Aaron J Braithwaite</h1>
                 </div>
                 <div className='links-section'>
                     <button id ='menu-button' onClick={()=>this.props.toggleDropDownMenu()}>

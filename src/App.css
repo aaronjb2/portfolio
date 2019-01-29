@@ -7,9 +7,10 @@
 }
 
 .header{
-  height:125px;
+  height:50px;
   width:100%;
-  background-image: linear-gradient(rgb(119, 194, 93), rgb(14, 102, 14));
+  /* background-image: linear-gradient(rgb(225, 231, 223), rgb(115, 119, 115)); */
+  background-image: linear-gradient(rgb(175, 172, 172), rgb(146, 143, 140));
   position:fixed;
   top:0;
   display:flex;
@@ -19,18 +20,17 @@
   z-index: 3;
 }
 
-.logo-section{
-  height:125px;
-  width:20%;
-}
 
 .title-section{
-  height:125px;
-  width: 60%;
+  height:50px;
+  width: 80%;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
 }
 
 .links-section{
-  height:125px;
+  height:50px;
   width:20%;
   display:flex;
   align-items:flex-start;
@@ -39,7 +39,7 @@
 
 .option-div{
   box-sizing:border-box;
-  height:125px;
+  height:50px;
   width:110px;
   display:flex;
   flex-direction:column;
@@ -48,7 +48,7 @@
 }
 
 .space{
-  height:140px;
+  height:50px;
   width:100%;
 }
 
@@ -84,15 +84,18 @@
 
 .drop-down-menu{
   position:fixed;
-  background-color:pink;
+  background-color:gray;
   width:100%;
-  top:125px;
+  top:50px;
   height:100vh;
   background-image: linear-gradient(rgb(200, 200, 200), rgb(100, 100, 100));
   z-index:2;
 }
 
-
+.giving-space{
+  width:5px;
+  height:40px;
+}
 
 .drop-down-option{
   border-bottom:3px solid black;
@@ -120,8 +123,35 @@
   background-image:linear-gradient(white, rgb(150, 150, 150));
 }
 
+#selected1{
+  background-image:linear-gradient(white, rgb(150, 150, 150));
+  border-top:3px solid black;
+}
+
+#not-selected1{
+  border-top:3px solid black;
+}
+
 .head-option{
   border-left:2px solid black;
+}
+
+.that-is-what-it-is-all-about{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.holder-of-my-photo{
+  height:200px;
+  width:200px;
+}
+
+.my-photo{
+  height:100%;
+  width:100%;
+  border-radius:50%;
+  border: 3px solid black;
 }
 
 .page-title{
@@ -237,6 +267,11 @@ width:92%
 
 .profile-pic{
   height:300px;
+}
+
+.about-space{
+  height:1px;
+  width:30px;
 }
 
 .under-profile-description-div{
@@ -605,7 +640,7 @@ font-weight:bold;
     top:65px;
   }
   .under-profile-description-div{
-    font-size:30px;
+    font-size:70px;
   }
   .my-story{
     font-size:27px;
@@ -725,7 +760,7 @@ font-weight:bold;
     font-size:35px;
     margin-top:15px;
     position:relative;
-    bottom:10px;
+    bottom:0px;
   }
   .my-story{
     font-size:29px;
@@ -754,11 +789,6 @@ font-weight:bold;
   }
   .profile-pic{
     height:380px;
-  }
-  .my-name{
-    font-size:40px;
-    position:relative;
-    bottom:15px;
   }
 
   .skills{
@@ -885,12 +915,6 @@ font-weight:bold;
     font-size:35px;
   }
 
-  .my-name{
-    font-size:45px;
-    position:relative;
-    bottom:10px;
-    line-height:45px;
-  }
 
   .my-profession{
     position:relative;
@@ -934,12 +958,7 @@ font-weight:bold;
     height:45px;
   }
 
-  .my-name{
-    font-size:50px;
-    position:relative;
-    bottom:10px;
-    line-height:45px;
-  }
+ 
 
 
   .my-profession{
@@ -1069,15 +1088,13 @@ font-weight:bold;
   body{
   }
   
-  .my-name{
-    font-size:50px;
-    position:relative;
-    top:-16px;
-    line-height:45px;
-  }
-  .my-story{
-    font-size:39px;
-  }
+.that-is-what-it-is-all-about{
+  display:flex;
+  flex-direction:row;
+  width:1200px;
+}
+
+  
   .contact-piece h4{
     font-size:42px;
   }
@@ -1102,29 +1119,17 @@ font-weight:bold;
     position:relative;
     top:40px;
   }
-.title-section{
-  position:relative;
-  bottom:40px;
-}
+
 
 }
 
-@media only screen and (min-width: 948px){
-  .title-section{
-    position:relative;
-    top:25px;
-  }
-  
-}
 
 @media only screen and (min-width: 1200px){
   .contact-piece h4{
     font-size:48px;
   }
   
-  .my-story{
-    font-size:45px;
-  }
+  
   .title-section{
     position:relative;
     top:0px;
@@ -1146,9 +1151,7 @@ font-weight:bold;
     display:flex;
     box-sizing:border-box;
   }
-  .my-story{
-    font-size:50px;
-  }
+  
 
   .contact-piece h4{
     font-size:50px;
@@ -1166,19 +1169,9 @@ font-weight:bold;
     width:33%;
   }
 
-  .title-section{
-    width:34%;
-  }
 
   .links-section{
     width:33%;
-  }
-
-  .my-name{
-    font-size:45px;
-    position:relative;
-    top:-14px;
-    line-height:45px;
   }
 
   .my-profession{
@@ -1192,11 +1185,6 @@ font-weight:bold;
   body{
   }
 
-  .my-name{
-    font-size:50px;
-    top:-12px;
-  }
-
   .my-profession{
     top:-26px;
   }
@@ -1205,18 +1193,12 @@ font-weight:bold;
 @media only screen and (min-width: 1636px){
   body{
   }
-  .my-name{
-    top:-15px;
-  }
   .my-profession{
     top:-25px;
   }
 }
 
 @media only screen and (min-width: 1657px){
-  .my-name{
-    top:10px;
-  }
   .my-profession{
     top:-0px;
   }
