@@ -100,7 +100,9 @@ class Projects extends Component{
                     </div>
                     <div className='container-for-paragraphs-describing-project' id='time-to-stretch'>
                         <p>Sabotage The Quest is a web application that allows users to play Resistance Avalon through their phones with a host computer screen to display all the results of the game as they play.</p>
-                        <p>Important technologies used to make this app include PostgreSQL and Socket.io.</p>
+                        <p>A host computer creates a room code and stores it in a Postgresql database.</p>
+                        <p>The current quest and attempt are stored in both redux and the database.</p>
+                        <p>Socket.io redirects the players to the correct screen once required input has been received from each player.</p>
                     </div>
                     <div className='holder-of-header-and-subheader' id='time-to-stretch'>
                         <h2>Phat Dragon</h2>
@@ -168,6 +170,9 @@ class Projects extends Component{
                     </div>
                     <div className='container-for-paragraphs-describing-project' id='time-to-stretch'>
                         <p>Phat Dragon patterns itself after Dungeons and Dragons. It allows users to interact with other users on a board. A dungeon master can swap out boards and toss monster and obstacle tokens on the board.</p>
+                        <p>Express-session allows users to create an account and login.</p>
+                        <p>When acting as the host, users can create and edit their campaigns, boards, and tokens on each board.  The components are stored in a Postgresql database.</p>
+                        <p>Socket.io allows hosts to start a round and receive live updates when users join and move pieces on the board.</p>
                     </div>
                 </div>
             </div>
