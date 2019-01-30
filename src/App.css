@@ -69,14 +69,14 @@
 }
 
 .white-line{
-  height:4px;
-  width:40px;
+  height:2px;
+  width:20px;
   background-color:white;
 }
 
 .my-square{
-  height:40px;
-  width:40px;
+  height:22px;
+  width:20px;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
@@ -167,6 +167,11 @@
   align-items:flex-start;
 }
 
+.great-and-spacious{
+  width:5px;
+  height:100x;
+}
+
 .contact-piece{
   height:80px;
   
@@ -174,6 +179,8 @@
   flex-direction:column;
   align-items:flex-start;
   box-sizing:border-box;
+  position:relative;
+  top:50px;
 }
 
 .contact-piece h4{
@@ -284,7 +291,10 @@ width:92%
 .home-stuff{
   display:flex;
   flex-direction:column;
-  align-items:center;
+  align-items:flex-start;
+  width:95%;
+  position:relative;
+  top:140px;
 }
 
 .holder-of-header-and-subheader{
@@ -627,24 +637,21 @@ font-weight:bold;
     bottom:40px;
   }
 
-  .contact-piece h4{
-    font-size:17px;
-  }
+  
 }
 
 
 @media only screen and (min-width:517px){
   body{
   }
-  .contact-piece h4{
-    font-size:22px;
-  }
+  
+  
   .profile-pic{
     height:340px;
   }
   .home-stuff{
     position:relative;
-    top:65px;
+    top:140px;
   }
   .under-profile-description-div{
     font-size:70px;
@@ -652,10 +659,7 @@ font-weight:bold;
   .my-story{
     font-size:27px;
   }
-  .important-contact-info{
-    position:relative;
-    bottom:60px;
-  }
+  
   .page-title{
     font-size:47px;
   }
@@ -757,9 +761,7 @@ font-weight:bold;
   body{
     
   }
-  .contact-piece h4{
-    font-size:22px;
-  }
+  
   .profile-pic{
     height:360px;
   }
@@ -776,12 +778,16 @@ font-weight:bold;
     position:relative;
     bottom:12px;
   }
-  .contact-piece h4{
-    font-size:23px;
+  
+ 
+
+  .home-stuff h2{
+    font-size:26px;
+    text-align:left;
   }
-  .important-contact-info{
+  .home-stuff{
     position:relative;
-    bottom:63px;
+    top:150px;
   }
 }
 
@@ -791,9 +797,7 @@ font-weight:bold;
   .my-story{
     font-size:31px;
   }
-  .contact-piece h4{
-    font-size:22px;
-  }
+  
   .profile-pic{
     height:380px;
   }
@@ -802,13 +806,8 @@ font-weight:bold;
     height:100vh;
   }
 
-  .contact-piece h4{
-    font-size:29px;
-  }
-  .important-contact-info{
-    position:relative;
-    bottom:83px;
-  }
+  
+  
 
   .my-profession{
     position:relative;
@@ -842,7 +841,10 @@ font-weight:bold;
     font-size:23px;
     width:594px;
   }
-
+  .home-stuff{
+    position:relative;
+    top:200px;
+  }
   #time-to-stretch{
    width:564px; 
   }
@@ -913,6 +915,9 @@ font-weight:bold;
   width:5px;
   height:9px;
 }
+.home-stuff h2{
+  font-size:36px;
+}
 }
 
 @media only screen and (min-width: 742px){
@@ -928,18 +933,9 @@ font-weight:bold;
     bottom:22px;
   }
 
-  .contact-piece h4{
-    font-size:32px;
-  }
-  .important-contact-info{
-    position:relative;
-    bottom:83px;
-  }
 
-  .space-traveller{
-    width:5px;
-    height:40px;
-  }
+
+ 
 }
 
 
@@ -951,22 +947,15 @@ font-weight:bold;
     font-size:37px;
   }
   
-  .contact-piece h4{
-    font-size:39px;
-  }
-  .important-contact-info{
-    position:relative;
-    bottom:109px;
-  }
 
+ .home-stuff{
+   position:relative;
+   top:200px;
+ }
 
-  .space-traveller{
-    width:5px;
-    height:45px;
-  }
-
- 
-
+.home-stuff h2{
+  font-size:45px;
+}
 
   .my-profession{
     position:relative;
@@ -1007,6 +996,29 @@ font-weight:bold;
     width:704px;
     justify-content:center;
   }
+
+.contact-info-div{
+  width:500px;
+}
+
+.contact-piece{
+  position:relative;
+  top:50px;
+}
+
+.contact-piece h4{
+  font-size:25px;
+}
+
+.important-contact-info{
+  position:relative;
+  bottom:70px;
+}
+
+.space-traveller{
+  height:60px;
+  width:5px;
+}
 
   .container-of-go-through-pictures-button{
     height:400px;
@@ -1095,25 +1107,6 @@ font-weight:bold;
   body{
   }
   
-.that-is-what-it-is-all-about{
-  display:flex;
-  flex-direction:row;
-  width:1200px;
-}
-
-  
-  .contact-piece h4{
-    font-size:42px;
-  }
-  .important-contact-info{
-    position:relative;
-    bottom:119px;
-  }
-
-  .space-traveller{
-    width:5px;
-    height:50px;
-  }
 
   .my-profession{
     position:relative;
@@ -1132,25 +1125,21 @@ font-weight:bold;
 
 
 @media only screen and (min-width: 1200px){
-  .contact-piece h4{
-    font-size:48px;
-  }
   
+  .that-is-what-it-is-all-about{
+    display:flex;
+    flex-direction:row;
+    width:1200px;
+    position:relative;
+    top:50px;
+  }
   
   .title-section{
     position:relative;
     top:0px;
   }
   
-  .important-contact-info{
-    position:relative;
-    bottom:139px;
-  }
 
-  .space-traveller{
-    width:5px;
-    height:80px;
-  }
 }
 
 @media only screen and (min-width: 1431px){
@@ -1159,10 +1148,6 @@ font-weight:bold;
     box-sizing:border-box;
   }
   
-
-  .contact-piece h4{
-    font-size:50px;
-  }
 
   #menu-button{
     display:none;

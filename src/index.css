@@ -19,7 +19,7 @@ h1,h2{
 
 }
 
-a{
+.option-div a,.drop-down-menu a{
   font-size:30px;
   text-decoration:none;
   color:black;
@@ -29,6 +29,9 @@ a{
   border-bottom:3px solid black;
   background-image: linear-gradient(rgb(93, 100, 109), rgb(73, 81, 85));
 }
+
+
+
 
 button{
   width:50px;
@@ -42,3 +45,10 @@ button{
   
 }
 
+#carousel-button{
+  height:30%;
+}
+
+#contact-me{
+  color:black;
+}

@@ -22,7 +22,8 @@ class Home extends Component{
         return (
             <div className='brav' id='time-to-stretch'>
                 <div className='home-stuff'>
-                    <div id='time-to-stretch' className='under-profile-description-div'>Showing the talents and accomplishments of Aaron Braithwaite as a web developer</div>
+                    <h2>Aaron J Braithwaite</h2>
+                    <h2>Full Stack Web Developer</h2>
                 </div>
             </div>
         )

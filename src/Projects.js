@@ -52,7 +52,7 @@ class Projects extends Component{
                     </div>
                     <div className='container-of-carousel' id='time-to-stretch'>
                         <div className='container-of-go-through-pictures-button'>
-                            <button disabled={this.state.first_project!=='normal'} onClick={()=>{
+                            <button id='carousel-button' disabled={this.state.first_project!=='normal'} onClick={()=>{
                                 this.setState({first_project:'left'});
                                 setTimeout(async ()=>{
                                     await this.setState({first_project_stage:this.state.first_project_stage===3?0:this.state.first_project_stage+1})
@@ -86,7 +86,7 @@ class Projects extends Component{
                             </div>
                         </div>
                         <div className='container-of-go-through-pictures-button'>
-                            <button disabled={this.state.first_project!=='normal'} onClick={()=>{
+                            <button id='carousel-button' disabled={this.state.first_project!=='normal'} onClick={()=>{
                                 this.setState({first_project:'right'});
                                 setTimeout(async ()=>{
                                     await this.setState({first_project_stage:this.state.first_project_stage===0?3:this.state.first_project_stage-1})
@@ -125,7 +125,7 @@ class Projects extends Component{
                     </div>
                     <div className='container-of-carousel' id='time-to-stretch'>
                         <div className='container-of-go-through-pictures-button'>
-                            <button disabled={this.state.second_project!=='normal'} onClick={()=>{
+                            <button id='carousel-button' disabled={this.state.second_project!=='normal'} onClick={()=>{
                                 this.setState({second_project:'left'});
                                 setTimeout(async ()=>{
                                     await this.setState({second_project_stage:this.state.second_project_stage===3?0:this.state.second_project_stage+1})
@@ -159,7 +159,7 @@ class Projects extends Component{
                             </div>
                         </div>
                         <div className='container-of-go-through-pictures-button'>
-                            <button disabled={this.state.second_project!=='normal'} onClick={()=>{
+                            <button id='carousel-button' disabled={this.state.second_project!=='normal'} onClick={()=>{
                                 this.setState({second_project:'right'});
                                 setTimeout(async ()=>{
                                     await this.setState({second_project_stage:this.state.second_project_stage===0?3:this.state.second_project_stage-1})
