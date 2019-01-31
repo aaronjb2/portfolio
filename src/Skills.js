@@ -29,7 +29,7 @@ class Skills extends Component{
                         </div>
                         <div className='skill-div'>
                         <div><img src='https://img.icons8.com/color/1600/nodejs.png' className='skill'/></div>
-                            <div className='title-of-skill-div'>Nodejs</div>
+                            <div className='title-of-skill-div'>Node.js</div>
                         </div>
                         <div className='skill-div'>
                         <div><img src='http://cdn.onlinewebfonts.com/svg/img_52059.png' className='skill'/></div>
